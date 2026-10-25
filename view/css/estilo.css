@@ -1,0 +1,36 @@
+body {
+    background-color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-admin {
+    background: linear-gradient(90deg, #0f172a 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-login-admin {
+    max-width: 420px;
+    margin: 80px auto;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.painel-admin-box {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+    margin-bottom: 40px;
+}
+
+.img-admin-preview {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
