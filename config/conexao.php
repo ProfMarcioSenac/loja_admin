@@ -1,8 +1,9 @@
 <?php
 abstract class Conexao {
     private $servidor = 'localhost';
-    private $user = 'admin';
-    private $pass = 'admin';
+    private $porta = '3307';
+    private $user = 'root';
+    private $pass = '';
     private $banco = 'loja_online';
     protected $conn;
 
@@ -11,7 +12,7 @@ abstract class Conexao {
     }
 
     private function conexao() {
-        $this->conn = new PDO("mysql:host=$this->servidor;dbname=$this->banco", $this->user, $this->pass);
+        $this->conn = new PDO("mysql:host=$this->servidor;port=$this->porta;dbname=$this->banco", $this->user, $this->pass);
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 }
