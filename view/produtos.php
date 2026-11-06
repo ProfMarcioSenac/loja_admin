@@ -22,7 +22,7 @@
                 <a href="painel.php" class="btn btn-outline-light me-2"><i class="fas fa-home me-1"></i> Painel</a>
                 <a href="usuarios.php" class="btn btn-outline-light me-2"><i class="fas fa-users me-1"></i> Usuários</a>
                 <a href="vendas.php" class="btn btn-outline-info me-3"><i class="fas fa-receipt me-1"></i> Vendas</a>
-                <a href="#" onclick="confirmSair()" class="btn btn-danger"><i class="fas fa-sign-out-alt me-1"></i> Sair</a>
+                <a href="#" id="sair" onclick="confirmSair()" class="btn btn-danger"><i class="fas fa-sign-out-alt me-1"></i> Sair</a>
             </div>
         </div>
     </nav>
@@ -72,7 +72,7 @@
                             <td class="fw-semibold"><?php echo $nome; ?></td>
                             <td class="text-muted small"><?php echo $descricao; ?></td>
                             <td class="fw-bold text-success">R$ <?php echo $preco; ?></td>
-                            <td class="text-center"><a class='btn btn-success btn-sm' href='editarProduto.php?id=<?php echo $id; ?>'><i class='fas fa-edit'></i></a></td>
+                            <td class="text-center"><a id="produto<?php echo $id; ?>" class='btn btn-success btn-sm' href='editarProduto.php?id=<?php echo $id; ?>'><i class='fas fa-edit'></i></a></td>
                             <td class="text-center"><a class='btn btn-danger btn-sm' onclick='confirmDelete(<?php echo $id; ?>)' href='#'><i class='fas fa-trash'></i></a></td>
                         </tr>
                         <?php } ?>

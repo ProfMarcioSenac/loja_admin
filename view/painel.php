@@ -48,7 +48,7 @@
                             <i class="fas fa-box fa-3x text-success mb-3"></i>
                             <h4 class="fw-bold">Gerenciar Produtos</h4>
                             <p class="text-muted small">Cadastre preços e imagens web.</p>
-                            <a href="produtos.php" class="btn btn-success btn-sm px-4">Acessar</a>
+                            <a id="produtos" href="produtos.php" class="btn btn-success btn-sm px-4">Acessar</a>
                         </div>
                     </div>
                 </div>

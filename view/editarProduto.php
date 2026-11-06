@@ -35,11 +35,11 @@
                 </div>
                 <div class="mb-4">
                     <label class="form-label fw-semibold">Link da Imagem (URL da Internet)</label>
-                    <input type="url" name="imagem" class="form-control" value="<?php echo $produto->getImagem(); ?>" placeholder="https://exemplo.com/foto.jpg">
+                    <input type="url" id="url" name="imagem" class="form-control" value="<?php echo $produto->getImagem(); ?>" placeholder="https://exemplo.com/foto.jpg">
                 </div>
                 <div class="d-flex justify-content-between">
                     <a href="produtos.php" class="btn btn-secondary">Voltar</a>
-                    <button type="submit" class="btn btn-success fw-semibold px-4">Salvar Alterações</button>
+                    <button type="submit" id="salvar" class="btn btn-success fw-semibold px-4">Salvar Alterações</button>
                 </div>
             </form>
         </div>
